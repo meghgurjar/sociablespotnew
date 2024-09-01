@@ -5,7 +5,7 @@ import HolisticApproach from "./components/UI/HolisticApproach";
 import GreatCommunity from "./components/UI/GreatCommunity";
 import Accessibility from "./components/UI/Accessibility"; // Corrected import
 import Man from "./components/UI/Man";
-import Carousel from "./components/Carousel"; // Imported Carousel component
+// import Carousel from "./components/Carousel"; // Imported Carousel component
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 const Home = ({ setCurrentPage }) => {
