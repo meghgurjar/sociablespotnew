@@ -1,10 +1,12 @@
 import "./index.css";
 import MentelCounseling from "./Images/mentel cou.png"
 import Newsletter from './components/Newsletter';
+import { Button } from "bootstrap";
 
 const Services = () => {
   const services = [
     {
+      
       title: "Mental Counseling",
       description:
         "Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla.",
@@ -46,6 +48,7 @@ const Services = () => {
         imageUrl: MentelCounseling,
 
     },
+    
   ];
 
   return (
@@ -65,7 +68,9 @@ const Services = () => {
                 alt={service.title}
                 className="z-0 h-4/5 w-4/5 ml-5 pb-3 rounded-md object-cover  "
               />
-              <div className="absolute inset-0 shadow-xl rounded-xl "></div>
+              <button className="absolute inset-0 shadow-xl rounded-xl "
+                onClick={() => window.location.href = '../Contact.jsx'}>
+              </button>
               <div className="absolute bottom-4 left-4 text-left ">
                 <h1 className="text-lg font-semibold text-black">
                   {service.title}
