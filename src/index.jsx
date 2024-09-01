@@ -7,20 +7,20 @@ import Contact from "./Contact";
 import Gallery from "./Gallery";
 import About from "./About";
 import Blogs from "./Blogs";
-// import Login from "./auth/Login";
+import Login from "./auth/Login";
 import reportWebVitals from "./reportWebVitals";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import * as ReactDOM from "react-dom/client";
-// import { AuthProvider } from "./contexts/AuthContext"
-// import ForgotPassword from "./auth/ForgotPassword";
+import { AuthProvider } from "./contexts/AuthContext"
+import ForgotPassword from "./auth/ForgotPassword";
 import "bootstrap/dist/css/bootstrap.min.css";
-// import Signup from "./auth/Signup";
-// import Dashboard from "./auth/Dashboard";
+import Signup from "./auth/Signup";
+import Dashboard from "./auth/Dashboard";
 
 const Main = () => {
   return (
-    // <AuthProvider>
+    <AuthProvider>
     <Router>
       <Header />
       <div className="container mx-auto py-4">
@@ -31,10 +31,10 @@ const Main = () => {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
           <Route path="/blogs" element={<Blogs />} />
-          {/* <Route path="/auth" element={<Login />} /> */}
-          {/* <Route path="/forgot-password" element={<ForgotPassword />} /> */}
-          {/* <Route path="/signup" element={<Signup />} /> */}
-          {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+          <Route path="/auth" element={<Login />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </div>
       <Footer />
