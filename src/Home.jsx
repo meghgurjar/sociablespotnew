@@ -1,28 +1,31 @@
 import React from "react";
-import { ChevronUp, ChevronDown } from "lucide-react";
+// import { ChevronUp, ChevronDown } from "lucide-react"; 
 import Sittinglady from "./components/UI/Sittinglady";
 import HolisticApproach from "./components/UI/HolisticApproach";
 import GreatCommunity from "./components/UI/GreatCommunity";
 import Accessibility from "./components/UI/Accessibility"; // Corrected import
 import Man from "./components/UI/Man";
-// import Carousel from "./components/Carousel"; // Imported Carousel component
+import Card from "./components/Carousel";
+// import Carousel from "./components/Carousel";
+import Newsletter from "./components/Newsletter";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Accordion from "./components/Accordian";
+import Gallery from "./Gallery";
 const Home = ({ setCurrentPage }) => {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-center bg-background #d1fae5">
-      <section className="flex items-start justify-between w-screen h-screen px-20">
+    <main className="flex flex-col min-h-screen  items-center justify-center bg-background #d1fae5 ">
+      <section className="flex items-start justify-between w-screen mb-40  h-auto px-20">
         <div className="pt-40 font-bold">
-          <h1 className="text-5xl mb-4">Sociable Spot</h1>
+          <h1 className="text-5xl ml-4 mb-4 ">Sociable Spot,</h1>
           <div className="text-4xl mb-4 text-black">
             <span>"Where Minds Meet,</span>
             <br />
             <span className="ml-10">Healing Begins"</span>
           </div>
           <p className="mt-10 mb-5 font-normal w-2/3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-            officia. Quo perspiciatis itaque quod voluptatem. Optio deleniti quo
-            quis facere?
+          Discover Sociable Spot! A haven where community, expert care, and a nurturing AI bot come together. Embrace a safe space to connect, grow, and find support. Engage in enriching Inner Circle activities and explore a supportive environment designed for your well-being.
+
           </p>
           <button className="px-6 py-2 bg-[#455A64] font-semibold rounded-full ">
             <Link to="/services" className="cursor-pointer no-underline text-white">
@@ -35,7 +38,7 @@ const Home = ({ setCurrentPage }) => {
         </div>
       </section>
 
-      <section className="w-screen h-screen flex flex-col px-20 items-center justify-start">
+      <section className="w-screen h-auto mb-24 flex flex-col px-20 mt-24 items-center justify-start">
         <h1 className="text-5xl font-semibold mb-4 text-center w-2/3">
           Why our Mental Health Consultants are the Best Choice
         </h1>
@@ -44,24 +47,22 @@ const Home = ({ setCurrentPage }) => {
             <HolisticApproach />
             <h1 className="font-semibold text-2xl">Holistic Approach</h1>
             <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Provident, molestias.
+            Experience a comprehensive approach to well-being that integrates community support, expert care, and advanced technology.
             </p>
           </div>
           <div className="transition duration-500 ease-in-out hover:bg-[#FAF9F6] transform hover:-translate-y-1 hover:scale-110 ... bg-[#D2F6D5] w-96 h-72 rounded-r-xl flex flex-col items-center justify-center gap-5 p-5 shadow-xl">
             <GreatCommunity />
             <h1 className="font-semibold text-3xl">Great Community</h1>
             <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus, iste.
+            Connect with a vibrant and supportive community dedicated to meaningful interactions and personal growth.
             </p>
           </div>
           <div className="transition duration-500 ease-in-out hover:bg-[#FAF9F6] transform hover:-translate-y-1 hover:scale-110 ... bg-[#D2F6D5] w-96 h-72 rounded-r-xl flex flex-col items-center justify-center gap-5 p-5 shadow-xl">
             <Accessibility />
             <h1 className="font-semibold text-2xl">Accessibility</h1>
             <p className="text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae,
-              quos.
+              
+            Enjoy easy access to consultations, resources, and activities designed to support your mental and emotional health.
             </p>
           </div>
         </div>
@@ -82,11 +83,7 @@ const Home = ({ setCurrentPage }) => {
             Health Consultancy
           </h1>
           <p className="mb-1">
-            Lorem ipsum dolor sit amet consectetur. Convallis est urna
-            adipiscing fringilla nulla diam lorem non mauris. Ultrices aliquet
-            at quam adipiscing feugiat interdum mattis. Placerat donec risus
-            diam sed et. A in ullamcorper ipsum justo vestibulum sit cursus A
-            risus donec eget enim.
+          At Sociable Spot, we are dedicated to creating a supportive and enriching community where well-being is at the heart of everything we do. Our holistic approach integrates expert consultations, a compassionate AI therapeutic bot, and engaging Inner Circle activities, all within a safe and accessible space. We strive to foster meaningful connections, promote personal growth, and offer innovative solutions to enhance mental and emotional health. Join us and be part of a community that values connection, support, and holistic care.
           </p>
           <button className="px-6 py-2 bg-[#455A64] text-white font-semibold rounded-full">
             {" "}
@@ -108,12 +105,16 @@ const Home = ({ setCurrentPage }) => {
       </section>
       <div className="w-5/6">
         <section>
-          {/* <Carousel /> */}
-          
+          {/* <Carousel/> */}
+          <Card />
         </section>
       </div>
-
-<section></section>
+{/* Gallary  */}
+<section>
+  
+ <Gallery/>
+    
+</section>
       
 
       <section>
@@ -122,76 +123,14 @@ const Home = ({ setCurrentPage }) => {
             Frequently Asked Questions
           </h2>
         </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Accordion Item #2
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="flush-headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Accordion Item #3
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-    </div>
-  </div>
-</div>
-      
         
-        {/* <div className="mx-auto max-w-3xl space-y-4 md:mt-0">
-          <div className="cursor-pointer rounded-md border border-gray-400 shadow-lg transition-all duration-200 bg-[#D2F6D5]">
-            <button
-              type="button" 
-              className="flex w-full items-center justify-between px-4 py-5 sm:p-6"
-            >
-              <span className="flex text-lg font-semibold text-black">
-                How do I get started?
-              </span>
-              <ChevronUp className="h-5 w-5 text-gray-500" />
-            </button>
-            <div className="px-4 pb-5 sm:px-6 sm:pb-6">
-              <p className="text-gray-500">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat aliquam adipisci iusto aperiam? Sint asperiores sequi
-                nobis inventore ratione deleniti?
-              </p>
-            </div>
-          </div>
-          {Array.from({ length: 2 }).map((_, i) => (
-            <div
-              key={i}
-              className="cursor-pointer rounded-md border border-gray-400 transition-all duration-200 bg-[#D2F6D5]"
-            >
-              <button
-                type="button"
-                className="flex w-full items-start justify-between px-4 py-5 sm:p-6 md:items-center"
-              >
-                <span className="flex text-start text-lg font-semibold text-black">
-                  What is the difference between a free and paid account?
-                </span>
-                <ChevronDown className="hidden h-5 w-5 text-gray-500 md:block" />
-              </button>
-            </div>
-          ))}
-        </div> */}
+        <Accordion />
+        
+        
+       
+      </section>
+      <section>
+        {/* <Newsletter /> */}
       </section>
     </main>
   );

@@ -1,29 +1,69 @@
 import React from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import doctor from "./Images/doc.jpg"
+import IC6 from "./Images/ic6.jpg"
+import IC5 from "./Images/ic5.jpg"
 
 function Gallery() {
   return (
-    <>
-      <Header />
-      <div className="min-h-screen p-10 flex flex-col">
-        <div className="text-center mt-10 mb-8">
-          <span className="text-black text-3xl font-bold border-b-2 border-green-800">Gallery</span>
+    
+     <div className="grid grid-cols-8 grid-rows-6 gap-4 mt-20">
+    <div className="col-span-2 row-span-5 rounded-lg shadow-lg bg-white p-6">
+          <h3 className="text-2xl font-semibold mb-4">Self-Reflection</h3>
+          <p className="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur. Convallis est urna
+            adipiscing fringilla nulla diam lorem non mauris.
+          </p>
 
-          <div className="container mx-auto p-4">
-            <div className="relative bg-white border border-gray-300 rounded-lg shadow-md h-64">
-              {/* First Box (Horizontal) */}
-              <div className="absolute left-0 top-0 h-16 w-48 bg-blue-400"></div>
-              {/* Second Box (Square) */}
-              <div className="absolute inset-x-0 top-16 h-25 bg-green-400"></div>
-              {/* Third Box (Rectangle) */}
-              <div className="absolute bottom-0 right-0 h-22 w-16 bg-yellow-400"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <Footer />
-    </>
+    </div>
+    <div className="col-span-4 row-span-3 col-start-3 rounded-lg shadow-lg bg-white p-6"> 
+      {/* <div className="col-span-2 row-span-1 rounded-lg shadow-lg bg-white p-6 flex"> */}
+          <img src= {IC6}
+          
+            className="w-auto h-auto mr-4"
+          />
+          <div>
+           
+          
+        </div></div>
+    <div className="col-span-2 row-span-3 col-start-7 rounded-lg shadow-lg bg-white p-6"> 
+      <h3 className="text-xl font-semibold mb-4">Self-Reflection</h3>
+          <p className="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+</div>
+    <div className="col-span-2 row-span-3 col-start-1 rounded-lg shadow-lg bg-white p-6 row-start-6">
+    <h3 className="text-xl font-semibold mb-4">Self-Reflection</h3>
+          <p className="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+    </div>
+    <div className="col-span-2 row-span-5 col-start-3 row-start-4 rounded-lg shadow-lg bg-white p-6">
+    <h3 className="text-xl font-semibold mb-4">Self-Reflection</h3>
+          <p className="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+    </div>
+    <div className="col-span-4 row-span-3 col-start-5 row-start-4 rounded-lg shadow-lg bg-white p-6">
+    <img src= {IC5}
+          
+          className="w-auto h-auto mr-4"
+        />
+    </div>
+    <div className="col-span-2 row-span-2 col-start-5 row-start-7 rounded-lg shadow-lg bg-white p-6">
+    <h3 className="text-xl font-semibold mb-4">Self-Reflection</h3>
+          <p className="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+    </div>
+    <div className="col-span-2 row-span-2 col-start-7 row-start-7 rounded-lg shadow-lg bg-white p-6">
+    <h3 className="text-xl font-semibold mb-4">Self-Reflection</h3>
+          <p className="text-gray-700">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+    </div>
+</div>
   );
 }
 

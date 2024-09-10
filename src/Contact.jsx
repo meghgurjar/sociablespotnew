@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 /* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
-
 const Contact = () => {
     return (
         <>
@@ -12,9 +11,9 @@ const Contact = () => {
                     <div className="info flex-1 p-4 text-center md:text-left">
                         <h1 className="text-2xl font-bold mb-4 flex-row">Contact Us Today for Personalized Support and Assistance</h1>
                         <p className='mb-4'>Lorem ipsum dolor sit amet consectetur. Convallis est urna adipiscing fringilla nulla diam lorem non mauris.</p>
-                        <p className='mb-4'>📞 +91 98345 46986</p>
-                        <p className='mb-4'>✉️ sociablespot@gmail.com</p>
-                        <p className='mb-4'>📍 Ahmedabad, Gujarat</p>
+                        <p className='mb-4'>📞 +91 9173058096</p>
+                        <p className='mb-4'>✉️ creativesapiens06@gmail.com</p>
+                        <p className='mb-4'>📍 Ahmedabad, Gujarat, India</p>
                     </div>
                     <div className="contact-form flex-1 p-4 bg-white border border-black rounded-md mt-8 md:mt-0 md:ml-4">
                         <form className="space-y-4">
