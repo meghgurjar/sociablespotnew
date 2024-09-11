@@ -2,10 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Wave from "./UI/Wave";
 import logo from "../Images/logo.1.jpg";
-// import {useAuth} from "../contexts/AuthContext"  
+import {useAuth} from "../contexts/AuthContext"  
 
 function Header() {
-  // const { currentUser } = useAuth();
+  const { currentUser } = useAuth();
 
   return (
     
@@ -31,14 +31,14 @@ function Header() {
           <Link to="/blogs" className="cursor-pointer text-xl  hover:border hover:border-black text-black no-underline">
             Blogs
           </Link>
-          <Link to="/about" className="cursor-pointer text-lg  hover:border hover:border-black text-black no-underline">
+          <Link to="/about" className="cursor-pointer text-xl  hover:border hover:border-black text-black no-underline">
             About
           </Link>
           <div className="flex-1 flex justify-end ">
-            <Link to="/contact" className="text-black text-gl  hover:border hover:border-black no-underline">
+            <Link to="/contact" className="text-black text-xl  hover:border hover:border-black no-underline">
               Contact Us
             </Link>
-            {/* {currentUser ? (
+            {currentUser ? (
               <div className="flex items-center">
                 <span className="mr-4">Welcome, {currentUser.email}</span>
                 <button
@@ -55,7 +55,7 @@ function Header() {
               >
                 Login / Sign Up
               </Link>
-            )} */}
+            )}
           </div>
         </div>
         <div></div>

@@ -9,34 +9,35 @@ const Accordion = () => {
   };
 
   return (
-    <div className="mx-auto max-w-3xl space-y-4 md:mt-0">
+    <div className="mx-auto  space-y-4 md:mt-0">
       
 
       
       {Array.from({ length: 3 }).map((_, i) => (
         <div
           key={i + 1}
-          className="cursor-pointer rounded-md border border-gray-400 shadow-lg transition-all duration-200 bg-[#D2F6D5]"
+          className="cursor-pointer rounded-md border  border-gray-400 shadow-lg transition-all duration-200 bg-[#D2F6D5]"
           onClick={() => toggleAccordion(i + 1)}
         >
           <button
             type="button"
-            className="flex w-full  items-center  justify-between px-4 py-5 sm:p-6 "
+            className="flex w-full items-center justify-between  py-5 sm:p-6 "
+           
           > 
-            <span className="text-lg font-semibold text-black" >
+            <span className="text-lg font-semibold w-auto text-black" >
               {i + 1 === 1 && " What services does Sociable Spot offer ?"}
               {i + 1 === 2 && "How can I access consultations with doctors?"}
               {i + 1 === 3 && "What makes Sociable Spot different from other platforms?"}
             </span>
             {activeIndex === i + 1 ? (
-              <ChevronUp className="h-5 w-5 text-gray-500" />
+                <ChevronUp className="h-5 w-5  text-gray-500" />
             ) : (
               <ChevronDown className="h-5 w-5 text-gray-500" />
             )}
           </button>
           {activeIndex === i + 1 && (
             <div className="px-4 pb-5 sm:px-6 sm:pb-6">
-              <p className="text-gray-500">
+              <p className="text-gray-500"> 
                 {i + 1 === 1 &&
                   "Sociable Spot provides a range of services including expert consultations with doctors, a therapeutic AI bot for mental well-being, and engaging Inner Circle activities designed to foster community and personal growth."}
                 {i + 1 === 2 &&
