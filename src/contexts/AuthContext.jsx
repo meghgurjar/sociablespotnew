@@ -23,7 +23,7 @@ export function AuthProvider({ children }) {
   function signup(email, password) {
     return createUserWithEmailAndPassword(auth, email, password);
   }
-
+                                                                               
   function login(email, password) {
     return signInWithEmailAndPassword(auth, email, password);
   }
@@ -31,7 +31,7 @@ export function AuthProvider({ children }) {
   function logout() {
     return signOut(auth);
   }
-
+  
   function resetPassword(email) {
     return sendPasswordResetEmail(auth, email);
   }

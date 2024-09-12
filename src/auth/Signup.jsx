@@ -52,7 +52,7 @@ export default function Signup() {
             <Button disabled={loading} className="w-100" type="submit">
               Sign Up
             </Button>
-          </Form>
+          </Form> 
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">

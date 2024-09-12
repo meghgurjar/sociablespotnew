@@ -51,7 +51,7 @@ function Header() {
             ) : (
               <Link
                 to="/auth"
-                className="cursor-pointer bg-neutral-600 text-white rounded-3xl pr-8 pl-8 py-2 flex items-center justify-center absolute right-9 -top-2 mt-12"
+                className="cursor-pointer   bg-neutral-600 text-white rounded-3xl mr-28 pr-8 pl-8 py-2 flex items-center justify-center absolute right-9 top-5 mt-12 no-underline"
               >
                 Login / Sign Up
               </Link>
