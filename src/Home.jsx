@@ -13,9 +13,12 @@ const Home = ({ setCurrentPage }) => {
   return (
     <main className="flex flex-col min-h-screen items-center justify-center bg-background">
       {/* Hero Section */}
-      <section className="flex flex-col md:flex-row items-center md:justify-between w-full h-auto p-10 md:px-20 mb-40">
-        <div className="pt-20 md:pt-40 md:text-left text-center">
-          <h1 className="text-4xl md:text-5xl mb-4">Sociable Spot,</h1>
+      <section className="flex flex-col md:flex-row items-center  md:justify-between w-full h-auto p-10 md:px-20 mb-40">
+        <div className="pt-20 md:pt-40 md:text-left  text-center">
+        <h1 className="text-4xl md:text-5xl mb-4 text-black font-bold inline-block overflow-hidden border-r-2 border-black whitespace-nowrap animate-typing">
+        Sociable Spot
+        <span className="animate-blink"></span>
+      </h1>
           <div className="text-3xl md:text-4xl mb-4 text-black">
             <span>"Where Minds Meet,</span>
             <br />
