@@ -41,7 +41,7 @@ const Main = () => {
       </div>
       <Footer />
     </Router>
-    // </AuthProvider>
+     </AuthProvider>
   );
 };
 

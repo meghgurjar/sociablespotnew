@@ -30,7 +30,7 @@ const Home = ({ setCurrentPage }) => {
             grow, and find support. Engage in enriching Inner Circle activities
             and explore a supportive environment designed for your well-being.
           </p>
-          <button className="px-6 py-2 bg-[#455A64] text-white font-semibold rounded-full">
+          <button className="px-6 py-2 bg-[#455A64] text-white  font-semibold rounded-full">
             <Link to="/services" className="no-underline">
               Get Started
             </Link>

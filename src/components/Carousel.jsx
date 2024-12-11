@@ -15,14 +15,24 @@ const Card = () => {
           />
           <div className="px-6 py-4">
             <div className="font-bold text-xl mb-2">
-              How Mental Health Consultants Can Help...
+              Inner Circle
             </div>
+            
             <p className="text-gray-700 text-base">
               Lorem ipsum dolor sit amet consectetur. Convallis est urna
               adipiscing fringilla nulla.
             </p>
           </div>
+          <div
+          key={index}
+          className="max-w-xs rounded-lg overflow-hidden shadow-lg bg-[#D2F6D5]"
+        >
+          
+          
+          
+        </div>    
         </div>  
+        
       ))}
     </div>
   );

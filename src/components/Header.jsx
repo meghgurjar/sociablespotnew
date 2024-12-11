@@ -9,7 +9,7 @@ function Header() {
 
   return (
     
-    <div className="relative z-0 ">
+    <div className="relative top-0 z-0 ">
       <div className="absolute  w-screen -top-20  overflow-hidden">
         <Wave />
       </div>
@@ -29,7 +29,7 @@ function Header() {
             Services
           </Link>
           <Link to="/blogs" className="cursor-pointer text-xl  hover:border hover:border-black text-black no-underline">
-            Blogs
+          Gallery
           </Link>
           <Link to="/about" className="cursor-pointer text-xl  hover:border hover:border-black text-black no-underline">
             About
